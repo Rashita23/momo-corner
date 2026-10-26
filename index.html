@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Momo Corner — Authentic Fresh Steamed, Fried & Tandoori Momos</title>
+  <meta name="description" content="Discover delicious steamed, fried, tandoori, and gravy momos at Momo Corner. Freshly prepared with love, authentic Himalayan spices, and served with signature spicy chutney.">
+  <meta name="keywords" content="Momo Corner, best momos near me, steamed momos, fried momos, tandoori momos, kurkure momos, food delivery, spicy chutney">
+  <meta name="author" content="Momo Corner">
+  <meta name="theme-color" content="#d9232d">
+  
+  <!-- OpenGraph Social Sharing -->
+  <meta property="og:title" content="Momo Corner — Little Pockets of Happiness, Big Bursts of Flavour!">
+  <meta property="og:description" content="Freshly prepared steamed, fried, tandoori, and flavour-packed momos served with our signature spicy chutney.">
+  <meta property="og:image" content="assets/images/1.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (Cute Momo SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23d9232d'/><path d='M25 65 C25 40 75 40 75 65 C70 78 30 78 25 65 Z' fill='%23fff9f2'/><circle cx='42' cy='55' r='3.5' fill='%23231815'/><circle cx='58' cy='55' r='3.5' fill='%23231815'/><path d='M46 62 Q50 67 54 62' stroke='%23231815' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M42 32 Q40 22 45 15' stroke='%23ffedd5' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M50 30 Q53 20 49 13' stroke='%23ffedd5' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M58 32 Q60 22 55 15' stroke='%23ffedd5' stroke-width='2.5' fill='none' stroke-linecap='round'/></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#d9232d',
+              darkred: '#b8141e',
+              orange: '#ff6b35',
+              amber: '#f59e0b',
+              cream: '#fff9f2',
+              creamdark: '#fbf0e4',
+              charcoal: '#1c1917',
+              muted: '#78716c'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data for Concept Restaurant (SEO & Academic Portfolio) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Momo Corner",
+    "image": "assets/images/1.jpg",
+    "description": "Authentic fresh steamed, fried, tandoori, and gravy momos concept website created as an academic portfolio project.",
+    "servesCuisine": "Tibetan, Himalayan, Asian, Street Food",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 11:00-23:30",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 14, Food Street (Academic Project Demo)",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</head>
+<body class="bg-brand-cream text-stone-900 antialiased selection:bg-brand-orange selection:text-white">
+
+  <!-- Top Announcement Bar (Academic Demo Notice & Hours) -->
+  <div class="bg-gradient-to-r from-red-700 via-brand-red to-orange-600 text-white text-xs py-2 px-4 shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="inline-block animate-pulse">🥟</span>
+        <span>Academic Portfolio Project Demo · Momo Corner Concept Restaurant</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] font-semibold">
+        <span class="flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          Demo Hours: 11:00 AM - 11:30 PM
+        </span>
+        <span class="flex items-center gap-1 text-amber-200 contact-phone-link">
+          <i data-lucide="info" class="w-3.5 h-3.5"></i>
+          Contact info available soon
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & NAVBAR -->
+  <header id="main-navbar" class="sticky top-0 z-40 bg-stone-900/90 backdrop-blur-md transition-all duration-300 py-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo with Cute Momo Icon -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+        <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-red to-brand-orange flex items-center justify-center p-2 shadow-lg group-hover:rotate-3 transition-transform">
+          <!-- Steam Puffs -->
+          <div class="absolute -top-2 flex gap-1 items-end justify-center w-full pointer-events-none">
+            <span class="w-1.5 h-3 bg-amber-200/80 rounded-full animate-steam-1"></span>
+            <span class="w-1.5 h-4 bg-orange-200/80 rounded-full animate-steam-2"></span>
+            <span class="w-1.5 h-2.5 bg-yellow-100/80 rounded-full animate-steam-3"></span>
+          </div>
+          <!-- Cute Momo SVG -->
+          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+            <path d="M22 68 C22 36 78 36 78 68 C72 82 28 82 22 68 Z" fill="#fff9f2"/>
+            <path d="M22 68 Q50 82 78 68" stroke="#f59e0b" stroke-width="2" fill="none"/>
+            <path d="M50 36 L50 48 M36 42 L42 50 M64 42 L58 50" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="41" cy="58" r="4" fill="#231815"/>
+            <circle cx="59" cy="58" r="4" fill="#231815"/>
+            <path d="M46 66 Q50 71 54 66" stroke="#d9232d" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <ellipse cx="34" cy="62" rx="4" ry="2" fill="#ffb4a2" opacity="0.8"/>
+            <ellipse cx="66" cy="62" rx="4" ry="2" fill="#ffb4a2" opacity="0.8"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-heading font-black text-2xl tracking-tight text-white flex items-center gap-1">
+            MOMO <span class="text-brand-orange">CORNER</span>
+          </span>
+          <span class="block text-[10px] tracking-widest uppercase font-semibold text-amber-300/90 -mt-1">
+            Pockets of Happiness
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold">
+        <a href="#home" class="nav-link text-amber-500 font-bold transition hover:text-brand-orange">Home</a>
+        <a href="#about" class="nav-link text-stone-300 transition hover:text-brand-orange">About Us</a>
+        <a href="#specials" class="nav-link text-stone-300 transition hover:text-brand-orange">Specials</a>
+        <a href="#menu" class="nav-link text-stone-300 transition hover:text-brand-orange">Our Menu</a>
+        <a href="#team" class="nav-link text-stone-300 transition hover:text-brand-orange">Our Team</a>
+        <a href="#gallery" class="nav-link text-stone-300 transition hover:text-brand-orange">Gallery</a>
+        <a href="#location" class="nav-link text-stone-300 transition hover:text-brand-orange">Location</a>
+        <a href="#contact" class="nav-link text-stone-300 transition hover:text-brand-orange">Contact</a>
+      </nav>
+
+      <!-- Cart Button & Order Now CTA -->
+      <div class="flex items-center gap-3">
+        <!-- Floating Cart Trigger -->
+        <button class="open-cart-btn relative p-2.5 rounded-2xl bg-stone-800 hover:bg-stone-700 text-white transition-all shadow hover:shadow-orange-500/20 flex items-center gap-2 group active:scale-95" aria-label="View Shopping Cart">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform"></i>
+          <span class="hidden sm:inline text-xs font-bold text-stone-200">Cart</span>
+          <span class="cart-total-badge hidden md:inline text-xs font-black text-brand-orange">₹0</span>
+          <!-- Dynamic count pill -->
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 bg-brand-red text-white text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow border-2 border-stone-900 animate-bounce">
+            0
+          </span>
+        </button>
+
+        <!-- Primary Order Now Button -->
+        <a href="#menu" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brand-red to-brand-orange hover:from-brand-darkred hover:to-orange-600 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-5 rounded-full shadow-lg hover:shadow-orange-500/30 transition-all duration-300 active:scale-95">
+          <span>Order Now</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-stone-300 hover:text-white hover:bg-stone-800 transition" aria-label="Open Navigation Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 -translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex">
+    <div class="w-72 sm:w-80 bg-stone-950 h-full p-6 text-white flex flex-col justify-between shadow-2xl relative z-10 border-r border-stone-800">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-stone-800 mb-6">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center text-white text-lg font-black">
+              🥟
+            </div>
+            <div>
+              <span class="font-heading font-black text-lg text-white">MOMO CORNER</span>
+              <span class="block text-[10px] text-brand-orange">Happiness in Every Bite</span>
+            </div>
+          </div>
+          <button id="mobile-menu-close" class="p-2 text-stone-400 hover:text-white rounded-lg hover:bg-stone-800" aria-label="Close menu">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="flex flex-col gap-3 font-semibold text-sm">
+          <a href="#home" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="home" class="w-4 h-4 text-brand-orange"></i> Home
+          </a>
+          <a href="#about" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="info" class="w-4 h-4 text-brand-orange"></i> About Us
+          </a>
+          <a href="#specials" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="sparkles" class="w-4 h-4 text-brand-orange"></i> Must-Try Specials
+          </a>
+          <a href="#menu" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="utensils-crossed" class="w-4 h-4 text-brand-orange"></i> Our Menu
+          </a>
+          <a href="#team" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="users" class="w-4 h-4 text-brand-orange"></i> Our Team
+          </a>
+          <a href="#gallery" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="image" class="w-4 h-4 text-brand-orange"></i> Food Gallery
+          </a>
+          <a href="#why-us" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="award" class="w-4 h-4 text-brand-orange"></i> Why Choose Us
+          </a>
+          <a href="#reviews" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="star" class="w-4 h-4 text-brand-orange"></i> Reviews
+          </a>
+          <a href="#location" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange"></i> Location & Hours
+          </a>
+          <a href="#contact" class="mobile-nav-link p-2 rounded-lg hover:bg-stone-800 hover:text-brand-orange transition flex items-center gap-3">
+            <i data-lucide="mail" class="w-4 h-4 text-brand-orange"></i> Contact Us
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-stone-800">
+        <a href="#menu" class="mobile-nav-link w-full bg-gradient-to-r from-brand-red to-brand-orange text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 mb-3 shadow-lg">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Order Now
+        </a>
+        <div class="text-xs text-stone-400 text-center contact-phone-link">
+          <span class="text-amber-400 font-semibold">Momo Corner Demo</span> · Contact info available soon
+        </div>
+      </div>
+    </div>
+    <!-- Drawer backdrop -->
+    <div onclick="document.getElementById('mobile-menu-drawer').classList.add('-translate-x-full'); document.body.classList.remove('overflow-hidden');" class="flex-1 bg-black/60 backdrop-blur-sm"></div>
+  </div>
+
+  <main>
+    <!-- 3. HERO BANNER SECTION -->
+    <section id="home" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-stone-950 py-20 lg:py-28">
+      <!-- Background Food Image with Rich Restaurant Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/1.jpg" alt="Momo Corner Delicious Fresh Momos Platter" class="w-full h-full object-cover object-center opacity-45 scale-105 transform hover:scale-100 transition-transform duration-1000 ease-out" onerror="this.src='assets/images/8.jpg'">
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/85 to-red-950/70"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-7 text-white text-center lg:text-left space-y-6">
+            
+            <!-- Promotional Badges -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-brand-red/90 text-white shadow-md border border-red-500/30">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-300"></i>
+                Freshly Prepared
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-amber-500/90 text-stone-950 shadow-md">
+                <i data-lucide="heart" class="w-3.5 h-3.5 text-red-700 fill-red-700"></i>
+                Made with Love
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-stone-800/90 text-amber-300 border border-amber-500/30">
+                <i data-lucide="flame" class="w-3.5 h-3.5 text-orange-400"></i>
+                Bursting with Flavour
+              </span>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="space-y-2">
+              <h2 class="text-sm sm:text-base font-bold uppercase tracking-widest text-brand-orange">
+                Welcome to Momo Corner
+              </h2>
+              <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-heading font-black tracking-tight text-white leading-tight">
+                Little Pockets of <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-500">Happiness,</span><br>
+                Big Bursts of <span class="underline decoration-brand-orange decoration-wavy decoration-2">Flavour!</span>
+              </h1>
+            </div>
+
+            <!-- Supporting Text -->
+            <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Discover delicious steamed, fried, tandoori, and flavour-packed momos, freshly prepared with love and served with our signature spicy chutney.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-red to-brand-orange hover:from-red-600 hover:to-orange-500 text-white font-bold text-base px-8 py-4 rounded-full shadow-xl hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95">
+                <i data-lucide="utensils" class="w-5 h-5"></i>
+                <span>Explore Our Menu</span>
+              </a>
+              <a href="#location" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-stone-900/80 hover:bg-stone-800 text-stone-200 hover:text-white font-bold text-base px-7 py-4 rounded-full border border-stone-700 hover:border-amber-400 transition-all duration-300 backdrop-blur-sm">
+                <i data-lucide="map-pin" class="w-5 h-5 text-brand-orange"></i>
+                <span>Find Our Location</span>
+              </a>
+            </div>
+
+            <!-- Quick Trust Highlights Bar -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-stone-800/80 text-center lg:text-left">
+              <div>
+                <span class="block text-2xl font-black text-amber-400">25+</span>
+                <span class="text-xs text-stone-400 font-medium">Momo Varieties</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black text-amber-400">100%</span>
+                <span class="text-xs text-stone-400 font-medium">Fresh Daily Dough</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black text-amber-400">4.9 ★</span>
+                <span class="text-xs text-stone-400 font-medium">Customer Love</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black text-amber-400">Fast</span>
+                <span class="text-xs text-stone-400 font-medium">WhatsApp Orders</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Feature / Floating Momo Showcase -->
+          <div class="lg:col-span-5 relative flex items-center justify-center">
+            <div class="relative w-full max-w-md aspect-square rounded-3xl p-3 bg-gradient-to-br from-amber-500/30 via-red-500/20 to-transparent backdrop-blur-sm shadow-2xl border border-white/10">
+              
+              <!-- Food Image Plate -->
+              <div class="w-full h-full rounded-2xl overflow-hidden shadow-inner relative group">
+                <img src="assets/images/8.jpg" alt="Hot and Special Momos Platter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='assets/images/2.jpg'">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+                
+                <!-- Bottom Caption inside Card -->
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="px-3 py-1 bg-brand-red text-white text-[11px] font-bold uppercase rounded-full shadow">
+                    Chef's Daily Special
+                  </span>
+                  <h3 class="text-xl font-bold mt-2">Smoky Tandoori & Fried Trio</h3>
+                  <p class="text-xs text-stone-300">Served with spicy garlic dip, mint chutney & mayo</p>
+                </div>
+              </div>
+
+              <!-- Floating Floating Badge Top Right -->
+              <div class="absolute -top-4 -right-4 bg-stone-900/95 border-2 border-brand-orange text-white p-3 rounded-2xl shadow-xl flex items-center gap-3 animate-float backdrop-blur-md">
+                <div class="w-10 h-10 rounded-xl bg-brand-red flex items-center justify-center text-xl">
+                  🥟
+                </div>
+                <div>
+                  <span class="block text-[11px] text-amber-400 font-bold uppercase">Steamed to order</span>
+                  <span class="text-sm font-black text-white">Soft & Juicy</span>
+                </div>
+              </div>
+
+              <!-- Floating Floating Badge Bottom Left -->
+              <div class="absolute -bottom-4 -left-4 bg-stone-900/95 border-2 border-amber-500 text-white p-3 rounded-2xl shadow-xl flex items-center gap-3 backdrop-blur-md">
+                <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-xl">
+                  🌶️
+                </div>
+                <div>
+                  <span class="block text-[11px] text-amber-400 font-bold uppercase">Signature Dip</span>
+                  <span class="text-sm font-black text-white">Fiery Red Chutney</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ABOUT US SECTION -->
+    <section id="about" class="py-20 lg:py-28 bg-brand-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left: Visual Arrangement -->
+          <div class="lg:col-span-6 relative">
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Image 1: Steamer basket with banana leaf -->
+              <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-4 border-white transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                <img src="assets/images/9.jpg" alt="Freshly Steamed Momos in Bamboo Basket" class="w-full h-full object-cover" onerror="this.src='assets/images/10.jpg'">
+              </div>
+              <!-- Image 2: Tandoori momos -->
+              <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-300 translate-y-6">
+                <img src="assets/images/4.jpg" alt="Smoky Tandoori Momos with Chutney" class="w-full h-full object-cover" onerror="this.src='assets/images/2.jpg'">
+              </div>
+            </div>
+
+            <!-- Floating Stamp -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-stone-900 text-white p-4 rounded-full shadow-2xl border-4 border-brand-orange flex flex-col items-center justify-center text-center w-28 h-28">
+              <span class="text-2xl">❤️</span>
+              <span class="text-[10px] font-black uppercase tracking-wider text-amber-400">Hand-Crafted</span>
+              <span class="text-[9px] text-stone-300">Every Morning</span>
+            </div>
+          </div>
+
+          <!-- Right: Engaging Content -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs mb-2">
+                About Momo Corner
+              </span>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900 leading-tight">
+                Our Story, Our Flavour
+              </h2>
+            </div>
+
+            <p class="text-stone-700 text-base sm:text-lg leading-relaxed">
+              At <strong class="text-brand-red">Momo Corner</strong>, we believe great food begins with great passion. What started as an unyielding love for authentic Himalayan street delicacies has grown into our commitment to serving piping-hot, flavor-packed momos that bring smiles with every single bite.
+            </p>
+
+            <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+              Every dumpling is handcrafted each morning using fresh farm vegetables, quality meats, fragrant herbs, and finely ground Himalayan spices. Whether you crave the gentle delicacy of bamboo-steamed dumplings, the exhilarating crunch of Kurkure, or the charcoal-kissed warmth of clay-oven tandoor, our kitchen prepares every order fresh with zero compromises.
+            </p>
+
+            <!-- Commitment Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="flex items-start gap-3 p-4 rounded-2xl bg-white shadow-sm border border-orange-100">
+                <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="leaf" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Farm-Fresh Ingredients</h4>
+                  <p class="text-xs text-stone-500">Handpicked vegetables and fresh dairy daily.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 rounded-2xl bg-white shadow-sm border border-orange-100">
+                <div class="w-10 h-10 rounded-xl bg-red-100 text-brand-red flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="flame" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Secret Chutney Recipe</h4>
+                  <p class="text-xs text-stone-500">Fiery red chilies, garlic & tangy tomatoes.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 rounded-2xl bg-white shadow-sm border border-orange-100">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Clean & Hygienic</h4>
+                  <p class="text-xs text-stone-500">Strict hygiene protocols in our kitchen.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 rounded-2xl bg-white shadow-sm border border-orange-100">
+                <div class="w-10 h-10 rounded-xl bg-yellow-100 text-yellow-700 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="smile" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Welcoming Hospitality</h4>
+                  <p class="text-xs text-stone-500">Fast, polite, and friendly customer care.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Placeholder Disclaimer Pill for Owner -->
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-center gap-2">
+              <i data-lucide="info" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+              <span><strong>Owner Note:</strong> Restaurant story, foundation year, and founder note are customizable in <code class="font-bold bg-amber-100 px-1 py-0.5 rounded">js/data.js</code>.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. OUR SPECIALS SECTION (MUST-TRY MOMO SPECIALS) -->
+    <section id="specials" class="py-20 lg:py-28 bg-stone-900 text-white relative overflow-hidden">
+      <!-- Background accent glow -->
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase bg-brand-red/80 text-white border border-red-500/30">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-300"></i> Signature Creations
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-white">
+            Must-Try Momo Specials
+          </h2>
+          <p class="text-stone-400 text-sm sm:text-base">
+            Hand-picked customer favorites and chef's masterpieces that keep our guests coming back for more.
+          </p>
+        </div>
+
+        <!-- Specials Grid (Populated dynamically via js/app.js) -->
+        <div id="specials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <!-- Rendered via renderSpecials() in js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. OUR COMPLETE MOMO MENU -->
+    <section id="menu" class="py-20 lg:py-28 bg-brand-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            Authentic Delicacies
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            Our Complete Momo Menu
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            From gentle bamboo-steamed delicacies to crunchy Kurkure and creamy gravies, explore our complete selection.
+          </p>
+          
+          <!-- Sample Price Disclaimer Note -->
+          <div class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-900 text-xs font-medium">
+            <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-700"></i>
+            <span>Sample prices for demonstration. Owner can update all items & prices in <strong>js/data.js</strong></span>
+          </div>
+        </div>
+
+        <!-- Filter Controls Container -->
+        <div class="bg-white rounded-3xl p-4 sm:p-6 shadow-md border border-orange-100 mb-10 space-y-4">
+          
+          <!-- Search & Diet Filters Bar -->
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Live Search Bar -->
+            <div class="relative w-full md:w-96">
+              <i data-lucide="search" class="w-5 h-5 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
+              <input type="text" id="menu-search-input" placeholder="Search momos, ingredients, chutneys..." class="w-full pl-11 pr-4 py-3 rounded-full bg-stone-50 border border-stone-200 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:bg-white transition">
+            </div>
+
+            <!-- Diet Toggles (All / Veg / Non-Veg) -->
+            <div class="flex items-center gap-2 w-full md:w-auto justify-center sm:justify-end">
+              <span class="text-xs font-bold text-stone-500 uppercase tracking-wider hidden sm:inline">Diet:</span>
+              <button data-diet="all" class="diet-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-900 text-white shadow transition">
+                All Items
+              </button>
+              <button data-diet="veg" class="diet-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-green-600 hover:text-green-700 transition flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-green-600"></span> Pure Veg
+              </button>
+              <button data-diet="nonveg" class="diet-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-red-600 hover:text-red-700 transition flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span> Non-Veg
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Category Filter Tabs (Horizontally scrollable on small screens) -->
+          <div class="pt-2 border-t border-stone-100">
+            <div id="category-tabs-container" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-2">
+              <!-- Populated dynamically via renderMenuCategories() -->
+            </div>
+          </div>
+
+          <!-- Results Count Indicator -->
+          <div class="flex items-center justify-between text-xs text-stone-500 pt-1">
+            <span id="menu-results-count">Showing all items</span>
+            <span class="text-stone-400">All momos served with signature dips</span>
+          </div>
+
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Populated dynamically via renderMenuItems() -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 14. PROMOTIONAL CTA BANNER -->
+    <section class="py-16 bg-gradient-to-r from-red-700 via-brand-red to-orange-600 text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-yellow-400/20 via-transparent to-transparent"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+        <div class="w-16 h-16 mx-auto rounded-3xl bg-white/20 backdrop-blur-md flex items-center justify-center text-3xl shadow-xl animate-float">
+          🥟
+        </div>
+        
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-black tracking-tight text-white max-w-3xl mx-auto">
+          Your Momo Cravings Deserve the Best!
+        </h2>
+        
+        <p class="text-stone-100 text-base sm:text-lg max-w-2xl mx-auto font-normal">
+          Explore your favourites, discover new flavours, and make every bite special. Hot, fresh, and hand-pleated with passion.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <a href="#menu" class="w-full sm:w-auto bg-stone-900 hover:bg-stone-800 text-white font-bold px-8 py-3.5 rounded-full shadow-xl transition transform hover:-translate-y-0.5 text-sm uppercase tracking-wider">
+            Explore Menu
+          </a>
+          <a href="#menu" onclick="showDemoOrderingNotice(event)" class="contact-wa-link w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3.5 rounded-full shadow-xl transition transform hover:-translate-y-0.5 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>WhatsApp Ordering (Demo)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OUR TEAM SECTION -->
+    <section id="team" class="py-20 lg:py-28 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            The Passion Behind Every Dumpling
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            Meet Our Amazing Team
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            From master dough pleaters to flame-grill specialists, our culinary team works tirelessly to bring you happiness in every plate.
+          </p>
+        </div>
+
+        <!-- Team Members Grid -->
+        <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+          <!-- Populated dynamically via renderTeam() in js/app.js -->
+        </div>
+
+        <!-- Kitchen in Action Highlight -->
+        <div class="bg-brand-cream rounded-3xl p-6 sm:p-10 border border-orange-100 shadow-sm">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-red">
+                Behind the Scenes
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-black text-stone-900">
+                Fresh Hand-Pleating in Our Kitchen
+              </h3>
+              <p class="text-stone-600 text-sm leading-relaxed">
+                Watch our dumpling artisans fold each momo with surgical precision. Each piece features between 18 to 24 delicate pleats to trap the aromatic savory broths and fillings.
+              </p>
+              <div class="p-3 bg-white rounded-xl border border-stone-200 text-xs text-stone-500">
+                <strong>Owner Note:</strong> Actual team & staff photos can be updated in <code class="font-bold text-brand-red">js/data.js</code> under <code class="font-bold">TEAM_MEMBERS</code>.
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+              <div class="rounded-2xl overflow-hidden shadow aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=700&q=80" alt="Chefs rolling fresh momo dough" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+              </div>
+              <div class="rounded-2xl overflow-hidden shadow aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=700&q=80" alt="Fresh red chili garlic sauce simmering" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. FOOD GALLERY SECTION -->
+    <section id="gallery" class="py-20 lg:py-28 bg-brand-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            Visual Delights
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            A Feast for Your Eyes
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Take a visual tour through our kitchen creations, sizzling tandoor trays, and authentic bamboo steamers.
+          </p>
+
+          <!-- Gallery Filters -->
+          <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
+            <button data-filter="all" class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold bg-brand-red text-white shadow transition">
+              All Photos
+            </button>
+            <button data-filter="steamed" class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-brand-orange transition">
+              Steamed
+            </button>
+            <button data-filter="fried" class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-brand-orange transition">
+              Fried & Crunchy
+            </button>
+            <button data-filter="tandoori" class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-brand-orange transition">
+              Tandoori
+            </button>
+            <button data-filter="kitchen" class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold bg-white text-stone-700 border border-stone-200 hover:border-brand-orange transition">
+              Kitchen Moments
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Populated dynamically via renderGallery() -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. WHY CHOOSE US SECTION -->
+    <section id="why-us" class="py-20 lg:py-28 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            The Momo Corner Promise
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            Why Foodies Love Momo Corner
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Every plate is served with genuine care, unbeatable freshness, and prices that make dining a pleasure.
+          </p>
+        </div>
+
+        <!-- Why Choose Us Grid -->
+        <div id="why-choose-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Populated dynamically via renderWhyChooseUs() -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. CUSTOMER REVIEWS SECTION -->
+    <section id="reviews" class="py-20 lg:py-28 bg-brand-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            Honest Feedback
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            What Our Guests Say
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Sample customer reviews demonstrating guest satisfaction and love for our dishes.
+          </p>
+          <div class="text-[11px] text-stone-500 italic">
+            *Demonstration testimonials. Replace with real Google Reviews via js/data.js.
+          </div>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div id="reviews-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Populated dynamically via renderReviews() -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 11. LOCATION & GOOGLE MAPS SECTION -->
+    <section id="location" class="py-20 lg:py-28 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Location Details -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs mb-2">
+                Visit Us Today
+              </span>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900 leading-tight">
+                Find Your Way to Momo Corner
+              </h2>
+            </div>
+
+            <!-- Live Open/Closed Status Badge -->
+            <div id="live-open-badge" class="pt-1">
+              <!-- Dynamically populated based on real current time -->
+            </div>
+
+            <!-- Address Card -->
+            <div class="p-6 rounded-2xl bg-brand-cream border border-orange-100 space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-red-100 text-brand-red flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-base">Restaurant Address</h4>
+                  <p id="location-address-text" class="text-sm text-stone-600 mt-1 leading-relaxed">
+                    Shop No. 14, Food Street, Near Central Plaza, Sector 18, New Delhi - 110001
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 pt-3 border-t border-stone-200/60">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-base">Opening Hours</h4>
+                  <p class="text-xs text-stone-600 mt-1">Monday – Friday: <strong id="hours-weekdays">11:00 AM - 11:00 PM</strong></p>
+                  <p class="text-xs text-stone-600">Saturday – Sunday: <strong id="hours-weekends">11:00 AM - 11:30 PM</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a id="location-directions-btn" href="https://maps.google.com" target="_blank" class="flex-1 bg-gradient-to-r from-brand-red to-brand-orange hover:from-red-600 hover:to-orange-500 text-white font-bold py-3 px-6 rounded-full shadow text-center text-sm flex items-center justify-center gap-2 transition active:scale-95">
+                <i data-lucide="navigation" class="w-4 h-4"></i>
+                <span>Get Directions</span>
+              </a>
+              <button onclick="showDemoOrderingNotice(event)" class="contact-wa-link flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow text-center text-sm flex items-center justify-center gap-2 transition active:scale-95">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WhatsApp Notice</span>
+              </button>
+            </div>
+
+            <p class="text-xs text-stone-600 italic">
+              *Address and coordinates can be updated easily in <code class="font-bold text-stone-700">js/data.js</code>.
+            </p>
+          </div>
+
+          <!-- Embedded Google Map -->
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-stone-100 relative">
+              <iframe 
+                id="google-map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827187217!2d77.216721!3d28.632832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b0450875%3A0xce42d0a0d47371b5!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Momo Corner Restaurant Google Maps Location">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 12. CONTACT US SECTION -->
+    <section id="contact" class="py-20 lg:py-28 bg-brand-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <span class="inline-block text-brand-red font-bold uppercase tracking-widest text-xs">
+            We'd Love to Hear from You
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-stone-900">
+            Contact Momo Corner
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Have a catering inquiry, party reservation, or feedback on our dumplings? Drop us a message anytime!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Info Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <div class="p-6 rounded-2xl bg-white shadow-sm border border-orange-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">Phone Assistance</h4>
+                <p class="text-xs text-stone-500 mb-1">Official hotline status</p>
+                <span class="contact-phone-link text-sm font-bold text-stone-800 block">Contact information will be available soon</span>
+                <span class="text-xs text-stone-500 block mt-0.5">Phone lines will be activated upon restaurant launch</span>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white shadow-sm border border-orange-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">WhatsApp Ordering</h4>
+                <p class="text-xs text-stone-500 mb-1">Student project demo mode</p>
+                <button onclick="showDemoOrderingNotice(event)" class="contact-wa-link text-sm font-bold text-green-700 hover:underline text-left">Online ordering is currently unavailable</button>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white shadow-sm border border-orange-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-base">Project Email Inquiries</h4>
+                <p class="text-xs text-stone-500 mb-1">Academic capstone & portfolio</p>
+                <a href="mailto:contact@momocorner.example.com" class="text-sm font-bold text-stone-800 hover:underline">contact@momocorner.example.com</a>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-orange-100/70 border border-orange-200 text-xs text-stone-700">
+              💡 <strong>Portfolio Project Note:</strong> This website is an internship & academic showcase. All menu items, reviews, and kitchen details are presented for demonstration.
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-lg border border-orange-100">
+              <h3 class="text-xl font-bold text-stone-900 mb-2">Send Us a Direct Message</h3>
+              <p class="text-xs text-stone-500 mb-6">Fill in your details below and we will get back to you promptly.</p>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" for="contact-name">
+                      Full Name *
+                    </label>
+                    <input type="text" id="contact-name" required placeholder="e.g., Rohit Sharma" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" for="contact-email-phone">
+                      Email or Phone *
+                    </label>
+                    <input type="text" id="contact-email-phone" required placeholder="e.g., yourname@email.com or contact note" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" for="contact-subject">
+                    Subject / Reason *
+                  </label>
+                  <input type="text" id="contact-subject" required placeholder="e.g., Bulk Party Order / Feedback" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5" for="contact-message">
+                    Your Message *
+                  </label>
+                  <textarea id="contact-message" rows="4" required placeholder="Write your message or inquiry here..." class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-brand-red to-brand-orange hover:from-red-600 hover:to-orange-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition active:scale-95 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Submit Message</span>
+                </button>
+
+                <p class="text-[11px] text-stone-400 text-center">
+                  *Frontend demonstration mode. Messages will show a confirmation modal.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 15. FOOTER -->
+  <footer class="bg-stone-950 text-white pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Summary -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-red to-brand-orange flex items-center justify-center text-white text-xl font-black">
+              🥟
+            </div>
+            <div>
+              <span class="font-heading font-black text-2xl text-white">MOMO CORNER</span>
+              <span class="block text-xs text-amber-400">Little Pockets of Happiness</span>
+            </div>
+          </div>
+          
+          <p class="text-stone-400 text-sm leading-relaxed max-w-sm">
+            Dedicated to serving fresh, mouth-watering steamed, fried, and tandoori momos, freshly prepared with love and served with our signature fiery red chutney.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/momocorner" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-brand-red text-stone-300 hover:text-white flex items-center justify-center transition" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://facebook.com/momocorner" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-brand-red text-stone-300 hover:text-white flex items-center justify-center transition" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <button onclick="showDemoOrderingNotice(event)" class="contact-wa-link w-9 h-9 rounded-full bg-stone-800 hover:bg-green-600 text-stone-300 hover:text-white flex items-center justify-center transition" aria-label="WhatsApp Demo Notice">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </button>
+            <a href="https://youtube.com" target="_blank" class="w-9 h-9 rounded-full bg-stone-800 hover:bg-red-600 text-stone-300 hover:text-white flex items-center justify-center transition" aria-label="YouTube">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4 border-b border-brand-orange/40 pb-1 inline-block">
+            Quick Navigation
+          </h4>
+          <ul class="space-y-2 text-sm text-stone-400">
+            <li><a href="#home" class="hover:text-amber-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-amber-400 transition">About Our Kitchen</a></li>
+            <li><a href="#specials" class="hover:text-amber-400 transition">Chef Specials</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Complete Menu</a></li>
+            <li><a href="#team" class="hover:text-amber-400 transition">Our Chefs & Team</a></li>
+            <li><a href="#gallery" class="hover:text-amber-400 transition">Food Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Categories -->
+        <div>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4 border-b border-brand-orange/40 pb-1 inline-block">
+            Momo Varieties
+          </h4>
+          <ul class="space-y-2 text-sm text-stone-400">
+            <li><a href="#menu" class="hover:text-amber-400 transition">Steamed Momos</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Crispy Fried Momos</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Clay Oven Tandoori</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Crunchy Kurkure</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Chilli Garlic Gravy</a></li>
+            <li><a href="#menu" class="hover:text-amber-400 transition">Beverages & Dips</a></li>
+          </ul>
+        </div>
+
+        <!-- Address & Contact -->
+        <div>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4 border-b border-brand-orange/40 pb-1 inline-block">
+            Restaurant Info
+          </h4>
+          <div class="space-y-3 text-xs text-stone-400">
+            <p class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5"></i>
+              <span>Shop No. 14, Food Street, Sector 18 (Academic Portfolio Demo)</span>
+            </p>
+            <p class="flex items-start gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5"></i>
+              <span class="contact-phone-link text-stone-400">Contact information will be available soon</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-orange flex-shrink-0"></i>
+              <a href="mailto:contact@momocorner.example.com" class="hover:text-white">contact@momocorner.example.com</a>
+            </p>
+            <p class="flex items-center gap-2 text-amber-300">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-orange flex-shrink-0"></i>
+              <span>Demo Hours: 11:00 AM - 11:30 PM</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Back to Top -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Momo Corner</strong> — Academic Portfolio & Internship Demonstration Project.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#home" class="hover:text-stone-300 transition">Back to Top ↑</a>
+          <span class="text-stone-700">|</span>
+          <span class="text-stone-400">Pure Taste · Fresh Daily</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top-btn" class="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-brand-red hover:bg-brand-orange text-white shadow-xl transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-none active:scale-90" aria-label="Scroll back to top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- SHOPPING CART SLIDE-OVER DRAWER -->
+  <div id="cart-drawer-container">
+    <!-- Backdrop overlay -->
+    <div id="cart-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+    <!-- Drawer Panel -->
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-stone-50 z-50 shadow-2xl flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out border-l border-stone-200">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 bg-white border-b border-stone-200 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-red text-white flex items-center justify-center font-bold">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-stone-900 text-lg">Your Food Cart</h3>
+            <span class="text-xs text-stone-500"><span class="cart-count-badge font-bold text-brand-red">0</span> items selected</span>
+          </div>
+        </div>
+        <button class="close-cart-btn p-2 rounded-xl text-stone-400 hover:text-stone-800 hover:bg-stone-100 transition" aria-label="Close cart">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Items List -->
+      <div class="flex-1 overflow-y-auto p-4 space-y-3">
+        <!-- Empty Cart Notice -->
+        <div id="cart-empty-state" class="py-16 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-orange-100 flex items-center justify-center text-4xl mb-4">
+            🥟
+          </div>
+          <h4 class="font-bold text-stone-800 text-lg mb-1">Your cart is hungry!</h4>
+          <p class="text-xs text-stone-500 max-w-xs mx-auto mb-6">
+            Looks like you haven't added any delicious momos yet.
+          </p>
+          <a href="#menu" onclick="window.cart.toggleDrawer(false)" class="inline-block bg-gradient-to-r from-brand-red to-brand-orange text-white text-xs font-bold uppercase tracking-wider py-2.5 px-6 rounded-full shadow hover:shadow-lg transition">
+            Explore Menu Now
+          </a>
+        </div>
+
+        <!-- Rendered list of items -->
+        <div id="cart-items-list" class="space-y-3"></div>
+      </div>
+
+      <!-- Drawer Footer (Subtotal, Packaging, Total & Checkout) -->
+      <div id="cart-footer" class="p-5 bg-white border-t border-stone-200 space-y-3 hidden">
+        <div class="space-y-1.5 text-xs text-stone-600">
+          <div class="flex justify-between">
+            <span>Item Subtotal</span>
+            <span id="cart-subtotal" class="font-bold text-stone-900">₹0</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Packaging Charges</span>
+            <span id="cart-packaging" class="font-bold text-stone-900">₹15</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Delivery Fee</span>
+            <span id="cart-delivery" class="font-bold">₹30</span>
+          </div>
+          <div class="flex justify-between text-base font-black text-stone-900 pt-2 border-t border-stone-100">
+            <span>Grand Total</span>
+            <span id="cart-total" class="text-brand-red">₹0</span>
+          </div>
+        </div>
+
+        <button onclick="window.cart.openCheckoutModal()" class="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm uppercase tracking-wider active:scale-95">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Proceed to WhatsApp Checkout</span>
+        </button>
+
+        <button onclick="window.cart.clearCart()" class="w-full text-center text-xs text-stone-600 hover:text-red-700 hover:underline pt-1">
+          Clear Entire Cart
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL (CUSTOMER DETAILS & WHATSAPP DISPATCH) -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button onclick="window.cart.closeCheckoutModal()" class="absolute top-5 right-5 p-2 text-stone-400 hover:text-stone-800 rounded-lg hover:bg-stone-100" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-xl font-bold">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-stone-900">Complete Your Order</h3>
+          <p class="text-xs text-stone-500">Order will be dispatched directly to our WhatsApp</p>
+        </div>
+      </div>
+
+      <!-- Mini-Summary of Order -->
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200 mb-5">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Order Summary</h4>
+        <div id="checkout-summary-list" class="space-y-1"></div>
+        <div class="flex justify-between items-center text-sm font-black text-stone-900 pt-2 mt-2 border-t border-stone-200">
+          <span>Amount Payable:</span>
+          <span id="checkout-grand-total" class="text-brand-red text-base">₹0</span>
+        </div>
+      </div>
+
+      <!-- Checkout Form -->
+      <form id="checkout-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1" for="cust-name">
+            Your Full Name *
+          </label>
+          <input type="text" id="cust-name" required placeholder="e.g., Ananya Verma" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1" for="cust-phone">
+            Phone / WhatsApp Number *
+          </label>
+          <input type="tel" id="cust-phone" required placeholder="e.g., 98XXXXXXXX (Demo input)" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+        </div>
+
+        <!-- Order Type Selection -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1.5">
+            Order Type *
+          </label>
+          <div class="grid grid-cols-3 gap-2">
+            <label class="flex items-center justify-center p-2.5 rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50 has-[:checked]:border-brand-orange has-[:checked]:bg-orange-50/60 has-[:checked]:text-brand-red text-xs font-bold transition">
+              <input type="radio" name="orderType" value="delivery" checked class="hidden">
+              <span>🛵 Delivery</span>
+            </label>
+            <label class="flex items-center justify-center p-2.5 rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50 has-[:checked]:border-brand-orange has-[:checked]:bg-orange-50/60 has-[:checked]:text-brand-red text-xs font-bold transition">
+              <input type="radio" name="orderType" value="takeaway" class="hidden">
+              <span>🥡 Takeaway</span>
+            </label>
+            <label class="flex items-center justify-center p-2.5 rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50 has-[:checked]:border-brand-orange has-[:checked]:bg-orange-50/60 has-[:checked]:text-brand-red text-xs font-bold transition">
+              <input type="radio" name="orderType" value="dine-in" class="hidden">
+              <span>🍽️ Dine-In</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label id="checkout-address-label" class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1" for="cust-address">
+            Delivery Address
+          </label>
+          <input type="text" id="cust-address" placeholder="House/Flat No, Landmark, Sector" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1" for="cust-notes">
+            Special Instructions / Extra Dips
+          </label>
+          <input type="text" id="cust-notes" placeholder="e.g., Extra spicy red chutney, extra mayo please" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange">
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-amber-600 to-brand-orange hover:from-amber-700 hover:to-orange-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition active:scale-95 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+          <span>Calculate & Preview Order (Demo Mode)</span>
+        </button>
+
+        <p class="text-[11px] text-stone-500 text-center">
+          Academic Demo Notice: Online ordering is currently unavailable. Submitting calculates your bill and previews the formatted receipt without sending external messages.
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- GALLERY LIGHTBOX MODAL -->
+  <div id="gallery-lightbox" class="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 hidden">
+    <!-- Close button -->
+    <button id="lightbox-close" class="absolute top-6 right-6 p-3 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition z-10" aria-label="Close Lightbox">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <!-- Previous button -->
+    <button id="lightbox-prev" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition z-10" aria-label="Previous image">
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+    <!-- Next button -->
+    <button id="lightbox-next" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 p-3 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition z-10" aria-label="Next image">
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Main Lightbox Display -->
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightbox-image" src="" alt="Enlarged Momo Photography" class="max-h-[75vh] w-auto max-w-full rounded-2xl object-contain shadow-2xl">
+      <div class="text-center mt-4 text-white">
+        <h4 id="lightbox-title" class="font-bold text-lg text-amber-300"></h4>
+        <p id="lightbox-caption" class="text-xs text-stone-300 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT CONFIRMATION MODAL (DEMO FEEDBACK) -->
+  <div id="contact-success-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl relative">
+      <div class="w-16 h-16 mx-auto rounded-2xl bg-green-100 text-green-600 flex items-center justify-center text-3xl mb-4">
+        ✓
+      </div>
+      <h3 class="text-2xl font-black text-stone-900 mb-2">Message Received!</h3>
+      <p id="contact-feedback-summary" class="text-xs text-stone-600 leading-relaxed mb-6"></p>
+      <div class="p-3 bg-stone-50 rounded-xl border border-stone-200 text-xs text-stone-600 mb-6">
+        <em>Demo Mode Note:</em> This message is simulated. In a live production environment, this form can be linked with EmailJS, Formspree, or your custom API endpoint.
+      </div>
+      <button id="contact-modal-close" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-bold py-3 rounded-xl transition text-sm">
+        Close Window
+      </button>
+    </div>
+  </div>
+
+  <!-- DEMO ORDERING NOTICE MODAL -->
+  <div id="demo-notice-modal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="demo-notice-title">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl relative border border-orange-100">
+      <button onclick="closeDemoOrderingNotice()" class="absolute top-5 right-5 p-2 text-stone-400 hover:text-stone-800 rounded-lg hover:bg-stone-100 transition" aria-label="Close notice">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-3xl mb-4 shadow-inner">
+        🥟
+      </div>
+
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-800 mb-3">
+        Academic Project Demo
+      </span>
+
+      <h3 id="demo-notice-title" class="text-xl sm:text-2xl font-heading font-black text-stone-900 mb-2">
+        Online Ordering is Currently Unavailable
+      </h3>
+
+      <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-5">
+        <strong>Momo Corner</strong> is an academic portfolio / college internship showcase project. 
+        Active WhatsApp dispatch and live phone ordering are disabled to protect personal privacy.
+      </p>
+
+      <div class="p-4 bg-orange-50/70 rounded-2xl border border-orange-200 text-xs text-stone-700 text-left mb-6 space-y-1.5">
+        <div class="font-bold text-stone-900 flex items-center gap-1.5">
+          <span>ℹ️</span> <span>How to enable live ordering later:</span>
+        </div>
+        <p class="text-stone-600">
+          Open <code class="bg-white px-1.5 py-0.5 rounded border border-orange-200 font-mono text-[11px] text-brand-red">js/data.js</code> and configure a verified business WhatsApp number in <code class="font-bold">whatsappNumber</code>.
+        </p>
+      </div>
+
+      <button onclick="closeDemoOrderingNotice()" class="w-full bg-gradient-to-r from-brand-red to-brand-orange hover:from-brand-darkred hover:to-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition active:scale-95 text-sm uppercase tracking-wider">
+        Understood / Close
+      </button>
+    </div>
+  </div>
+
+  <!-- DEMO ORDER RECEIPT PREVIEW MODAL -->
+  <div id="demo-receipt-modal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="demo-receipt-title">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto border border-orange-100">
+      <button onclick="closeDemoReceiptModal()" class="absolute top-5 right-5 p-2 text-stone-400 hover:text-stone-800 rounded-lg hover:bg-stone-100 transition" aria-label="Close receipt">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl font-bold">
+          🧾
+        </div>
+        <div>
+          <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800">
+            Demo Mode · Receipt Preview
+          </span>
+          <h3 id="demo-receipt-title" class="text-xl font-heading font-black text-stone-900">Order Calculated Successfully!</h3>
+        </div>
+      </div>
+
+      <div class="p-3 bg-stone-100 rounded-xl text-xs text-stone-600 mb-4 border border-stone-200">
+        <strong>Notice:</strong> Online ordering is currently unavailable for this academic demonstration project. <em>No real order was placed and no personal message was sent.</em>
+      </div>
+
+      <!-- Rendered Receipt Summary -->
+      <div id="demo-receipt-content" class="bg-stone-50 rounded-2xl p-4 border border-stone-200 mb-6 font-mono text-xs space-y-1">
+        <!-- Injected dynamically by window.cart.showDemoReceiptModal -->
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button id="copy-receipt-btn" onclick="copyDemoReceipt()" class="flex-1 bg-stone-900 hover:bg-stone-800 text-white font-bold py-3 px-4 rounded-xl transition text-xs flex items-center justify-center gap-2">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          <span>Copy Receipt Text</span>
+        </button>
+        <button onclick="closeDemoReceiptModal()" class="flex-1 bg-gradient-to-r from-brand-red to-brand-orange text-white font-bold py-3 px-4 rounded-xl transition text-xs">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+    // Update year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
